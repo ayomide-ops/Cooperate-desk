@@ -20,7 +20,7 @@ export function Sidebar() {
   return (
     <aside className="w-64 border-r border-gray-200 bg-white flex flex-col h-full">
       <div className="h-16 flex items-center px-6 border-b border-gray-200">
-        <span className="text-primary font-bold text-xl tracking-tight">FlowDesk</span>
+        <span className="text-primary font-bold text-xl tracking-tight">Cooperate Desk</span>
       </div>
       <div className="flex-1 overflow-y-auto py-6 px-4 flex flex-col gap-1">
         {NAV_ITEMS.map((item) => {
