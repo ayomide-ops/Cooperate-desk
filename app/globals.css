@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4B31BD;
+  --color-primary-hover: #33217F;
+  --color-primary-tint: #EFEBFB;
+  --color-ink: #1A1B23;
+  --color-ink-secondary: #5B6472;
+  --color-surface: #F7F6FC;
+  --color-semantic-success: #1F9D66;
+  --color-semantic-warning: #C9820A;
+  --color-semantic-danger: #D64545;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
