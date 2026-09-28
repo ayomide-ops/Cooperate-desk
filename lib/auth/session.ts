@@ -13,7 +13,7 @@ export async function requireServerSession(): Promise<UserSession> {
     userId: "usr_123",
     organizationId: "org_abc",
     role: "ADMIN" as const,
-    email: "admin@flowdesk.example.com",
+    email: "admin@Cooperate Desk.example.com",
     name: "System Admin",
   };
 
