@@ -1,5 +1,6 @@
 import { UserSession } from "@/lib/auth/session";
-import { Bell } from "lucide-react";
+import { logout } from "@/app/login/actions";
+import { Bell, LogOut } from "lucide-react";
 
 export function Header({ session }: { session: UserSession }) {
   return (
@@ -9,7 +10,7 @@ export function Header({ session }: { session: UserSession }) {
         <span className="text-sm font-semibold text-ink px-2 py-1 bg-surface rounded">{session.organizationId}</span>
       </div>
       <div className="flex items-center gap-6">
-        <button className="text-ink-secondary hover:text-primary transition-colors"><Bell className="w-5 h-5" /></button>
+        <button aria-label="Notifications" className="text-ink-secondary hover:text-primary transition-colors"><Bell className="w-5 h-5" /></button>
         <div className="flex items-center gap-3 border-l border-gray-200 pl-6">
           <div className="flex flex-col items-end">
             <span className="text-sm font-medium text-ink leading-tight">{session.name}</span>
@@ -18,6 +19,11 @@ export function Header({ session }: { session: UserSession }) {
           <div className="w-9 h-9 rounded-full bg-primary-tint text-primary flex items-center justify-center font-bold text-sm">
             {session.name.charAt(0)}
           </div>
+          <form action={logout}>
+            <button type="submit" aria-label="Sign out" title="Sign out" className="text-ink-secondary hover:text-semantic-danger transition-colors">
+              <LogOut className="w-5 h-5" />
+            </button>
+          </form>
         </div>
       </div>
     </header>
