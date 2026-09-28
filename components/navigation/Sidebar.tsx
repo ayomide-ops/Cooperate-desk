@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Users, FolderKanban, Users2, FileText, Settings, Workflow, BarChart3 } from "lucide-react";
+import { LayoutDashboard, Users, FolderKanban, Users2, FileText, Workflow, BarChart3 } from "lucide-react";
 
 const NAV_ITEMS = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Customers", href: "/customers", icon: Users },
-  { name: "Projects", href: "/projects", icon: FolderKanban },
-  { name: "Teams", href: "/teams", icon: Users2 },
-  { name: "Invoices", href: "/invoices", icon: FileText },
-  { name: "Workflows", href: "/workflows", icon: Workflow },
-  { name: "Reports", href: "/reports", icon: BarChart3 },
+  { name: "Customers", href: "/dashboard/customers", icon: Users },
+  { name: "Projects", href: "/dashboard/projects", icon: FolderKanban },
+  { name: "Teams", href: "/dashboard/teams", icon: Users2 },
+  { name: "Invoices", href: "/dashboard/invoices", icon: FileText },
+  { name: "Workflows", href: "/dashboard/workflows", icon: Workflow },
+  { name: "Reports", href: "/dashboard/reports", icon: BarChart3 },
 ];
 
 export function Sidebar() {
